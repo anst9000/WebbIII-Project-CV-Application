@@ -1,0 +1,156 @@
+/*
+    Created on : 2019-okt-29, 18:31:49
+    Author     : Anders Strömberg
+*/
+
+/* SHOWCASE */
+#showcase {
+    background: url('../img/showcase.jpg') no-repeat bottom;
+    border-bottom: 1px solid $primary_text;
+    margin-bottom: 30px;
+    
+    .showcase-container {
+	max-height: 800px;
+	overflow: hidden;
+	background-size: 100% auto;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	
+	.showcase-row {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+    }
+    
+    h2 {
+	font-size: 50px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+    }
+    
+    p {
+	font-size: 1.5rem;
+	color: $secondary_text;
+	margin: 0 auto;
+    }
+    
+    .showcase-content {
+	width: 60%;
+	background: $color_showcase_bg;
+	color: $color_showcase_font;
+	border-radius: 90px;
+	padding: 40px;
+	opacity: 0.9;
+	text-align: center;
+	
+	h2 {
+	    color: $color_nav_font;
+	    letter-spacing: 2px;
+
+	    .primary-text {
+		color: $color_span_font;
+	    }
+	}
+    }
+}
+
+
+/* FEATURES */
+#features {
+    margin: 2.5rem 0 4rem 0;
+            
+    .features-header {
+	text-align: center;
+	
+	h2 {
+	    color: $color_features_font;
+	    font-size: 35px;
+	    margin: 0;
+	    padding-bottom: 10px;
+	}
+
+	p {
+	    color: $color_features_font;
+	    margin: 0;
+	    margin-bottom: 40px;
+	}
+    }
+}
+
+.icon-group {
+    font-family: 'Merriweather Sans', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);    
+    
+    .icon {
+	display: inline-block;
+	text-align: center;
+	margin-top: 2.5rem;
+	
+	h4 {
+	    color: $color_features_font;
+	    padding: 10px 0;
+	    font-size: 1.4rem;
+	}
+
+	p {
+	    color: lighten($color_features_font, 10%);
+	    font-size: 1.0rem;
+	}
+
+    }
+    
+    .fas {
+	font-size: 60px;
+	color: $primary_text;
+	padding-bottom: 10px;
+    }
+    
+}
+
+/* INFO */
+#info {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background: $color_info_bg;
+    color: $color_info_font;
+    padding: 2rem 0;
+    
+    .info-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    }
+    
+    img {
+	max-width: 60%;
+	height: auto;
+	width: auto\9; /* ie8 */
+	margin: 2rem auto;
+	border-radius: 25%;
+	opacity: 0.5;
+    }
+}
+
+.info-list {
+    margin: 2rem 3rem;
+    
+    h2 {
+	font-size: 35px;
+	margin: 0;
+	padding-bottom: 10px;
+    }
+
+    ul {
+	list-style: none;
+	padding: 0;
+    }
+
+    li {
+	line-height: 2em;
+	font-size: 20px;
+    }
+
+}

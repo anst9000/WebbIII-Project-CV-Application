@@ -1,0 +1,278 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/*
+    Created on : 2019-okt-29, 18:31:49
+    Author     : Anders Str÷mberg
+*/
+/* SHOWCASE */
+#showcase {
+  background: url("../img/showcase.jpg") no-repeat bottom;
+  border-bottom: 1px solid #56a79a;
+  margin-bottom: 30px; }
+  #showcase .showcase-container {
+    max-height: 800px;
+    overflow: hidden;
+    background-size: 100% auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); }
+    #showcase .showcase-container .showcase-row {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  #showcase h2 {
+    font-size: 50px;
+    padding-bottom: 20px;
+    margin: 0 auto; }
+  #showcase p {
+    font-size: 1.5rem;
+    color: #cccccc;
+    margin: 0 auto; }
+  #showcase .showcase-content {
+    width: 60%;
+    background: #333333;
+    color: #ffffff;
+    border-radius: 90px;
+    padding: 40px;
+    opacity: 0.9;
+    text-align: center; }
+    #showcase .showcase-content h2 {
+      color: #edf0f1;
+      letter-spacing: 2px; }
+      #showcase .showcase-content h2 .primary-text {
+        color: #56a79a; }
+
+/* FEATURES */
+#features {
+  margin: 2.5rem 0 4rem 0; }
+  #features .features-header {
+    text-align: center; }
+    #features .features-header h2 {
+      color: #444444;
+      font-size: 35px;
+      margin: 0;
+      padding-bottom: 10px; }
+    #features .features-header p {
+      color: #444444;
+      margin: 0;
+      margin-bottom: 40px; }
+
+.icon-group {
+  font-family: 'Merriweather Sans', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+  .icon-group .icon {
+    display: inline-block;
+    text-align: center;
+    margin-top: 2.5rem; }
+    .icon-group .icon h4 {
+      color: #444444;
+      padding: 10px 0;
+      font-size: 1.4rem; }
+    .icon-group .icon p {
+      color: #5e5e5e;
+      font-size: 1.0rem; }
+  .icon-group .fas {
+    font-size: 60px;
+    color: #56a79a;
+    padding-bottom: 10px; }
+
+/* INFO */
+#info {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  background: #333333;
+  color: #ffffff;
+  padding: 2rem 0; }
+  #info .info-image {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #info img {
+    max-width: 60%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+    margin: 2rem auto;
+    border-radius: 25%;
+    opacity: 0.5; }
+
+.info-list {
+  margin: 2rem 3rem; }
+  .info-list h2 {
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 10px; }
+  .info-list ul {
+    list-style: none;
+    padding: 0; }
+  .info-list li {
+    line-height: 2em;
+    font-size: 20px; }
+
+/*
+    Created on : 2019-okt-27, 13:31:36
+    Author     : Anders Str÷mberg
+*/
+/*Education specific*/
+.education {
+  background-color: #9a9a9a; }
+  .education h4 {
+    display: none; }
+
+#education-list {
+  background: url("../img/leaves.jpg") no-repeat center center; }
+
+/*Job specific*/
+.job {
+  background-color: #9a9a9a; }
+  .job h4 {
+    display: none; }
+
+#job-list {
+  background: url("../img/refinery.jpg") no-repeat center center; }
+
+/*Website specific*/
+.website {
+  background-color: #9a9a9a; }
+  .website h4 {
+    display: none; }
+
+#website-list {
+  background: url("../img/keyboard.jpg") no-repeat center center; }
+
+article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%; }
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 17px;
+  background-color: #d3d3d3; }
+
+.container {
+  margin: auto; }
+
+/* NAVIGATION */
+nav .current li, nav .current a {
+  color: #f28123;
+  border-bottom: solid 4px #f28123; }
+nav li, nav a {
+  color: #edf0f1;
+  font-size: 1.2rem;
+  list-style: none;
+  text-decoration: none; }
+nav .nav-links {
+  list-style: none; }
+  nav .nav-links li {
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 0px 0px;
+    /*border-bottom: solid 4px $color_nav_font;*/ }
+  nav .nav-links li:last-child {
+    margin-right: 0rem; }
+  nav .nav-links li a {
+    transition: all 0.2s ease 0s; }
+  nav .nav-links li a:hover {
+    padding: 0px 0px;
+    background-color: #3c3d45; }
+
+header {
+  background-color: #24252a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10%; }
+  header a {
+    text-decoration: none; }
+  header h1 {
+    color: #edf0f1;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+    cursor: pointer; }
+    header h1 .primary-text {
+      color: #56a79a; }
+
+/* CONTACT */
+footer {
+  background-color: #6C6F7D; }
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 0; }
+  .contact .contact-list {
+    list-style: none; }
+
+/* DB-ITEMS */
+.db-item-list {
+  border-bottom: 1px solid #56a79a;
+  letter-spacing: 2px;
+  line-height: 1.5; }
+  .db-item-list ul {
+    max-width: 60%;
+    margin: 0 auto 15rem auto;
+    list-style: none;
+    padding-top: 3.5rem; }
+  .db-item-list li {
+    line-height: 2em;
+    font-size: 20px;
+    margin-bottom: 1rem; }
+  .db-item-list hr {
+    border: none;
+    height: 1px;
+    color: #333;
+    /* old IE */
+    background-color: #333;
+    /* Modern Browsers */ }
+
+/*Card specific*/
+.card {
+  width: 75%;
+  max-width: 800px;
+  height: 200px;
+  border-radius: 15px;
+  background-color: #CFD4C5;
+  margin: 1rem auto;
+  box-shadow: 10px 10px; }
+
+.card-header {
+  padding: 1rem; }
+  .card-header h3 {
+    color: #56a79a;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-left: 0; }
+  .card-header span {
+    margin-left: 1rem; }
+
+.card-body {
+  line-height: 1.25;
+  padding: 0 1rem; }
+  .card-body p {
+    margin-left: 4.5rem;
+    padding-bottom: 2px; }
+
+.list-item h2 {
+  margin: 0 2rem;
+  color: #fdf5e6;
+  text-shadow: -1px 0 #56a79a, 0 1px #56a79a, 1px 0 #56a79a, 0 -1px #56a79a;
+  background: url(../img/open.png) no-repeat 0 14px;
+  background-size: 30px 30px;
+  font-weight: bold;
+  padding: 10px 0 0 50px;
+  cursor: pointer; }
+.list-item h2.close {
+  background-image: url(../img/close.png); }
+.list-item h2 span {
+  margin-left: 2rem; }
+
+/*# sourceMappingURL=style.css.map */

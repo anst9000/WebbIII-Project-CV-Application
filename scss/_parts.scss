@@ -1,0 +1,45 @@
+/*
+    Created on : 2019-okt-27, 13:31:36
+    Author     : Anders Strömberg
+*/
+
+/*Education specific*/
+.education {
+    background-color: $color_parts_bg;
+    
+    h4 {
+	display: none;
+    }
+}
+
+#education-list {
+    background:url('../img/leaves.jpg') no-repeat center center;
+}
+
+
+/*Job specific*/
+.job {
+    background-color: $color_parts_bg;
+    
+    h4 {
+	display: none;
+    }
+}
+
+#job-list {
+    background: url('../img/refinery.jpg') no-repeat center center;
+}
+
+
+/*Website specific*/
+.website {
+    background-color: $color_parts_bg;
+    
+    h4 {
+	display: none;
+    }
+}
+
+#website-list {
+    background:url('../img/keyboard.jpg') no-repeat center center;
+}
