@@ -23,7 +23,7 @@ $(document).ready(function() {
 	let webId = res.records[i].id
         let webTitle = res.records[i].title
         let webUrl = res.records[i].url
-	let webLink = webUrl
+	let webLink = 'https://' + webUrl
         let webDescription = res.records[i].description
 
 	    output += `
