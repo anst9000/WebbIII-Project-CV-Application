@@ -33,7 +33,7 @@ $(document).ready(function() {
 		<div class="card">
 
 		    <div class="card-header">
-			<h3>ID ${eduId}<span>${eduSchool}</span></h3>
+			<h3><span>${eduSchool}</span></h3>
 		    </div>
 
 		    <div class="card-body">
@@ -62,10 +62,16 @@ $(document).ready(function() {
 	    let $card = $(this).next('.card');
 
 	    if ($card.is(':hidden')) {
-		$card.slideDown();
+		$('.close').next('.card').each(function() {
+		    $(this).slideUp(750);
+		    $('.list-item h2').removeClass();
+		});
+
+		$card.slideDown(750);
 		$(this).addClass('close');
 	    } else {
-		$card.slideUp();
+
+		$card.slideUp(750);
 		$(this).removeClass('close');
 	    }
 	}); // end click

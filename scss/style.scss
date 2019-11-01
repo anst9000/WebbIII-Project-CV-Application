@@ -90,7 +90,6 @@ header {
     }
 }
 
-
 /* CONTACT */
 footer {
     background-color: $color_contact_bg;
@@ -118,7 +117,7 @@ footer {
 
     ul {
 	max-width: 60%;
-	margin: 0 auto 15rem auto;
+	margin: 0 auto 5rem auto;
 	list-style: none;
 	padding-top: 3.5rem;
     }
@@ -137,62 +136,69 @@ footer {
     }
 }
 
-/*Card specific*/
-.card {
-    width: 75%;
-    max-width: 800px;
-    height: 200px;
-    border-radius: 15px;
-    background-color: $color_card_bg;
-    margin: 1rem auto;
-    box-shadow: 10px 10px;
-}
 
-.card-header {
-    padding: 1rem;
-    
-    h3 {
-	color: $color_card_header;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	margin-left: 0;
-    }
-
-    span {
-	margin-left: 1rem;
+/* MEDIA QUERIES */
+@media screen and (max-width: 980px) {
+    header h1 {
+	font-size: 2.0rem;
     }
     
-}
-
-.card-body {
-    line-height: 1.25;
-    padding: 0 1rem;
-    
-    p {
-	margin-left: 4.5rem;
-	padding-bottom: 2px;
+    nav {
+	li, a {
+	    font-size: 1.0rem;
+	}
+	
+	.nav-links li {
+	    margin-right: 1.0rem;
+	}
     }
 }
 
-.list-item {
-    h2 {
-	margin: 0 2rem;
-	color: $color_list_font;
-	text-shadow: -1px 0 $primary_text, 0 1px $primary_text, 1px 0 $primary_text, 0 -1px $primary_text;
-	background: url(../img/open.png) no-repeat 0 14px;
-	background-size: 30px 30px;
-	font-weight: bold;
-	padding: 10px 0 0 50px;
-	cursor: pointer;
-    }
-        
-    h2.close {
-      background-image: url(../img/close.png);
-    }
-
-    
-    h2 span {
-	margin-left: 2rem;
+@media screen and (max-width: 860px) {
+    header {
+	display: block;
+	
+	h1, ul {
+	    margin: 10px auto 5px auto;
+	    text-align: center;
+	}
     }
 }
 
+@media screen and (max-width: 725px) {
+    footer {
+	display: block;
+	text-align: center;
+    }
+    
+    .contact {
+        display: inline-block;
+	text-align: left;
+    }
+    
+    .contact-item {
+	margin-bottom: 1rem;
+    }
+    
+    .contact-item:last-child {
+	margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    header h1 {
+	font-size: 1.8rem;
+    }
+    
+    nav {
+	li, a {
+	    font-size: 0.8rem;
+	}
+	
+	.nav-links li {
+	    margin-right: 0.7rem;
+	}
+    }
+}
 
